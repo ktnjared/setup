@@ -1,18 +1,18 @@
-# 
+#
 
 ## Windows 10
 
 1. Install the latest version of [Windows 10](https://www.microsoft.com/en-us/software-download/windows10).
     - Local user
     - Privacy Settings page
-        
+
         | Option             | on/off | Option               | on/off |
         | ------------------ | ------ | -------------------- | ------ |
         | Speech recognition | off    | Location             | on     |
         | Diagnostics        | on     | Tailored experiences | off    |
         | Relevant Ads       | off    |                      |        |
     - Cortana off
-    - 
+    - Task Sharing off
 
 2. Install all updates from Software Update.
     - Continue to Check for Updates, reboot, and rerun until there are none left
@@ -49,11 +49,28 @@ Installation documentation is [available in Microsoft Docs](https://docs.microso
     - [Kali Linux](https://www.microsoft.com/store/apps/9PKR34TNCV07)
     - [Pengwin](https://www.microsoft.com/store/apps/9NV1GV1PXZ6P)
     - [Ubuntu 20.04 LTS](https://www.microsoft.com/store/apps/9n6svws3rx71)
-7. Launch the distribution to initiate setup. 
+7. Launch the distribution to initiate setup.
+
+## Manually Downloaded Installers
+
+- [GitHub](https://github.com/) [Desktop](https://desktop.github.com/) [client](https://central.github.com/deployments/desktop/desktop/latest/win32)
+- [Swift](https://swift.org/) [on Windows](https://swift.org/download)
+- [Visual Studio Code](https://code.visualstudio.com/)
+- [Visual Studio](https://visualstudio.microsoft.com/) [Community Edition](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=Community)
+    - Individual Components
+
+        | Component                                          | Visual Studio ID                                    | Type        |
+        | -------------------------------------------------- | --------------------------------------------------- | ----------- |
+        | C++ CMake tools for Windows                        | Microsoft.VisualStudio.Component.VC.CMake.Project   | recommended |
+        | Git for Windows                                    | Microsoft.VisualStudio.Component.Git                | recommended |
+        | MSVC v142 - VS 2019 C++ x64/x86 build tools 14.25+ | Microsoft.VisualStudio.Component.VC.Tools.x86.x64   | <span style="font-color: #9F0000;">required</span>    |
+        | Python 3 64-bit 3.7.8+                             | Component.CPython.x64                               | recommended |
+        | Windows 10 SDK 10.0.17763.0+                       | Microsoft.VisualStudio.Component.Windows10SDK.17763 | required    |
+        | Windows Universal C Runtime                        | Microsoft.VisualStudio.Component.Windows10SDK       | required    |
 
 ## Microsoft Store
 
-### Software 
+### Software
 
 - [Bitwarden](https://www.microsoft.com/store/productId/9PJSDV0VPK04)
 - [EarTrumpet](https://www.microsoft.com/store/productId/9NBLGGH516XP)
@@ -104,6 +121,7 @@ Scoop is a software manager that installs things into your user directory, so yo
     ```shell
     Invoke-Expression (New-Object System.Net.WebClient).DownloadString('https://get.scoop.sh')
     ```
+
 3. Set the `ExecutionPolicy` for current user to allow `RemoteSigned`.
 
     ```shell
@@ -124,42 +142,22 @@ Scoop is a software manager that installs things into your user directory, so yo
 ### Programs
 
 - [Discord](https://discord.com/) [for Windows](https://discord.com/api/download?platform=win)
-- [git](https://git-scm.com/) [for Windows](https://gitforwindows.org/)
 - [neofetch](https://github.com/dylanaraps/neofetch)
 - [PowerToys](https://github.com/microsoft/PowerToys)
     - [ ] TODO: move to intalling via WinGet when available
-- [Python](https://www.python.org/) [3.8.x for Windows](https://www.python.org/downloads/)
 - [Signal](https://signal.org/) [for Desktop](https://signal.org/download/)
 - [Speccy](https://www.ccleaner.com/speccy)
 - [Telegram](https://telegram.org/) [Desktop](https://desktop.telegram.org/)
 - [Windows 10 Auto Dark Mode](https://github.com/Armin2208/Windows-Auto-Night-Mode)
     - [ ] TODO: move to intalling via WinGet when available
 
-## Manually Downloaded Installers
-
-- [GitHub](https://github.com/) [Desktop](https://desktop.github.com/) [client](https://central.github.com/deployments/desktop/desktop/latest/win32)
-- [Visual Studio Code](https://code.visualstudio.com/)
-
 ## Games
 
 - [Battle.net](https://www.blizzard.com/en-us/) [Desktop client](https://www.blizzard.com/apps/battle.net/desktop)
-    - Install Heroes of the Storm
-    - Install Overwatch
-    - Install World of Warcraft
-    - Install World of Warcraft Classic
-    - [Twitch](https://twitch.tv/) [App for Windows](https://desktop.twitchsvc.net/installer/windows/TwitchSetup.exe) for Warcraft Mods
-        - [AdiBags](https://www.curseforge.com/wow/addons/adibags)
-        - [AnyFont](https://www.curseforge.com/wow/addons/anyfont)
-        - [AutoVendor](https://www.curseforge.com/wow/addons/autovendor)
-        - [GatherMate2](https://www.curseforge.com/wow/addons/gathermate2)
-        - [GatherMate2_Data](https://www.curseforge.com/wow/addons/gathermate2_data)
-        - [Gnosis (Castbars and Timers)](https://www.curseforge.com/wow/addons/gnosis)
-        - [HandyNotes](https://www.curseforge.com/wow/addons/handynotes)
-        - [KuiNameplates](https://www.curseforge.com/wow/addons/kuinameplates)
-        - [MapCoords](https://www.curseforge.com/wow/addons/map-coords)
-        - [MBB](https://www.curseforge.com/wow/addons/mbb)
-        - [Pawn](https://www.curseforge.com/wow/addons/pawn)
-        - [Shadowed Unit Frames](https://www.curseforge.com/wow/addons/shadowed-unit-frames)
+    - [Heroes of the Storm](https://heroesofthestorm.com/)
+    - [Overwatch](https://playoverwatch.com/)
+    - [World of Warcraft](https://worldofwarcraft.com/)
+    - [World of Warcraft Classic](https://worldofwarcraft.com/wowclassic)
 - [Epic Games Store](https://www.epicgames.com/store/) [client](https://launcher-public-service-prod06.ol.epicgames.com/launcher/api/installer/download/EpicGamesLauncherInstaller.msi)
 - [Final Fantasy XIV](https://na.finalfantasyxiv.com/) [North American game client](http://gdl.square-enix.com/ffxiv/inst/ffxivsetup.exe)
     - [Menolly Caryatid](https://na.finalfantasyxiv.com/lodestone/character/21378972/) on [Famfrit (Primal)](https://na.finalfantasyxiv.com/lodestone/worldstatus/)
@@ -167,6 +165,19 @@ Scoop is a software manager that installs things into your user directory, so yo
 - [GOG](https://www.gog.com/) [Galaxy client](https://www.gog.com/galaxy)
 - [Minecraft](https://www.minecraft.net/) [Java Edition client](https://www.minecraft.net/en-us/download)
 - [Steam](https://store.steampowered.com/) [client](https://cdn.cloudflare.steamstatic.com/client/installer/SteamSetup.exe)
+- [Twitch](https://twitch.tv/) [App for Windows](https://desktop.twitchsvc.net/installer/windows/TwitchSetup.exe) for Warcraft Mods
+    - [AdiBags](https://www.curseforge.com/wow/addons/adibags)
+    - [AnyFont](https://www.curseforge.com/wow/addons/anyfont)
+    - [AutoVendor](https://www.curseforge.com/wow/addons/autovendor)
+    - [GatherMate2](https://www.curseforge.com/wow/addons/gathermate2)
+    - [GatherMate2_Data](https://www.curseforge.com/wow/addons/gathermate2_data)
+    - [Gnosis (Castbars and Timers)](https://www.curseforge.com/wow/addons/gnosis)
+    - [HandyNotes](https://www.curseforge.com/wow/addons/handynotes)
+    - [KuiNameplates](https://www.curseforge.com/wow/addons/kuinameplates)
+    - [MapCoords](https://www.curseforge.com/wow/addons/map-coords)
+    - [MBB](https://www.curseforge.com/wow/addons/mbb)
+    - [Pawn](https://www.curseforge.com/wow/addons/pawn)
+    - [Shadowed Unit Frames](https://www.curseforge.com/wow/addons/shadowed-unit-frames)
 
 ## PowerShell
 
@@ -181,7 +192,7 @@ Install-Module -Name PSReadLine -AllowPrerelease -Scope CurrentUser -Force -Skip
 ```shell
 New-Item -Type Directory ~/git
 cd ~/git
-git 
+git
 git config --global user.email "email@jaredschmidt.net"
 git config --global user.name "Jared Schmidt"
 ```
