@@ -7,20 +7,20 @@ the desktop game.
 
 ## Parts List
 
-| Part        | Cost (USD)<br>(rounded) | Manufacturer            | Model                                |     Purchased      | Notes                                                              |
-| :---------- | ----------------------: | ----------------------- | ------------------------------------ | :----------------: | ------------------------------------------------------------------ |
-| **Case**    |                   `210` | [FormD][CASEman]        | [T1 v1.1][CASEmod]                   |        :x:         | white mITX case<br>9.5 Liters<br>milled aluminium                  |
-| **PSU**     |                   `185` | [Corsair][PSUman]       | [SF750][PSUmod]                      |        :x:         | 750W<br>SFX<br>80 PLUS Platinum                                    |
-| **Fan**     |                    `20` | [Noctua][FANman]        | [NF-A12x15 Chromax][FANmod]          |        :x:         | 120x120x15 mm<br>94.2 m³/h<br>1850 RPM<br>23.9 dB                  |
-| **Fan**     |                    `20` | [Noctua][FANman]        | [NF-A12x15 Chromax][FANmod]          |        :x:         | 120x120x15 mm<br>94.2 m³/h<br>1850 RPM<br>23.9 dB                  |
-| **CPU**     |                   `449` | [AMD][CPUman]           | [Ryzen 7 5800X][CPUmod]              |        :x:         | 8 cores<br>16 thread<br>3.8 GHz clock<br>4.7 GHz boost<br>105W TDP |
-| **HSF**     |                    `80` | [Cooler Master][HSFman] | [MasterLiquid ML240L V2 RGB][HSFmod] |        :x:         |                                                                    |
-| **MOBO**    |                   `???` | [][MOBOman]             | [][MOBOmod]                          |        :x:         | mITX                                                               |
-| **RAM**     |                   `???` | [][RAMman]              | [][RAMmod]                           |                    |                                                                    |
-| **GPU**     |                   `???` | [][GPUman]              | [][GPUmod]                           |                    |                                                                    |
-| **SSD0**    |                   `???` | [][SSD0man]             | [][SSD0mod]                          |                    |                                                                    |
-| **SSD1**    |                     `0` | [Samsung][SSD1man]      | [PM981][SSD1mod] 512 GB              | :heavy_check_mark: |                                                                    |
-| **Display** |                   `???` | [][Displayman]          | [][Displaymod]                       |                    | 4K, IPS, 120Hz+                                                    |
+| Part        | Cost (USD)<br>(rounded) | Manufacturer            | Model                                |     Purchased      | Notes                                                                             |
+| :---------- | ----------------------: | ----------------------- | ------------------------------------ | :----------------: | --------------------------------------------------------------------------------- |
+| **Case**    |                   `210` | [FormD][CASEman]        | [T1 v1.1][CASEmod]                   |        :x:         | white mITX case<br>9.5 Liters<br>milled aluminium                                 |
+| **PSU**     |                   `185` | [Corsair][PSUman]       | [SF750][PSUmod]                      |        :x:         | 750W<br>SFX<br>80 PLUS Platinum                                                   |
+| **Fan**     |                    `20` | [Noctua][FANman]        | [NF-A12x15 Chromax][FANmod]          |        :x:         | 120x120x15 mm<br>94.2 m³/h<br>1850 RPM<br>23.9 dB                                 |
+| **Fan**     |                    `20` | [Noctua][FANman]        | [NF-A12x15 Chromax][FANmod]          |        :x:         | 120x120x15 mm<br>94.2 m³/h<br>1850 RPM<br>23.9 dB                                 |
+| **CPU**     |                   `449` | [AMD][CPUman]           | [Ryzen 7 5800X][CPUmod]              |        :x:         | 8 cores<br>16 thread<br>3.8 GHz clock<br>4.7 GHz boost<br>105W TDP                |
+| **HSF**     |                    `80` | [Cooler Master][HSFman] | [MasterLiquid ML240L V2 RGB][HSFmod] |        :x:         |                                                                                   |
+| **MOBO**    |                   `???` | [][MOBOman]             | [][MOBOmod]                          |        :x:         | mITX                                                                              |
+| **RAM**     |                   `???` | [][RAMman]              | [][RAMmod]                           |                    |                                                                                   |
+| **GPU**     |                   `???` | [][GPUman]              | [][GPUmod]                           |                    |                                                                                   |
+| **SSD0**    |                   `???` | [][SSD0man]             | [][SSD0mod]                          |                    |                                                                                   |
+| **SSD1**    |                     `0` | [Samsung][SSD1man]      | [PM981][SSD1mod] 512 GB              | :heavy_check_mark: |                                                                                   |
+| **Display** |                   `???` | [][Displayman]          | [][Displaymod]                       |                    | 32"<br>4K<br>IPS<br>HDR10<br>120Hz or greater<br>Adaptive sync or G-Sync<br>USB-C |
 
 ## Resources
 
