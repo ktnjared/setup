@@ -5,6 +5,22 @@ In 2020, I gave my Ryzen 1700X desktop to my brother-in-law when the desktop I b
 I've run with a 2019 MacBook Pro (16-inch) and a 2017 Dell XPS 13 Developer Edition with eGPUs. It's time to get back to 
 the desktop game.
 
+## Purpose
+
+* Daily Driver (Windows; Linux via WSL 2)
+* Development
+  * Python (Visual Studio Code)
+  * Swift
+    * Swift on Windows (Visual Studio)
+    * Swift on Linux
+* Gaming (Windows)
+  * Final Fantasy XIV
+  * 
+* Streaming
+  * Twitch
+* Virtualization
+  * Hyper-V
+
 ## Parts List
 
 ### Computer
@@ -26,14 +42,14 @@ the desktop game.
 
 ### External Components
 
-| Part           | Cost<br>(MSRP$) | Manufacturer         | Model                |     Purchased      | Notes                                                                   |
-| :------------- | --------------: | -------------------- | -------------------- | :----------------: | ----------------------------------------------------------------------- |
-| **Display**    |           `???` | ???[][Displayman]    | ???[][Displaymod]    |        :x:         | 32"<br>4K<br>IPS<br>HDR10<br>120Hz or greater<br>Adaptive sync<br>USB-C |
-| **Headphones** |           `???` | ???[][Headphonesman] | ???[][Headphonesmod] | :heavy_check_mark: |                                                                         |
-| **Keyboard 0** |           `???` | ???[][Keyboardman0]  | ???[][Keyboardmod1]  | :heavy_check_mark: |                                                                         |
-| **Keyboard 1** |           `???` | ???[][Keyboardman1]  | ???[][Keyboardmod0]  | :heavy_check_mark: |                                                                         |
-| **Mouse**      |           `???` | ???[][Mouseman]      | ???[][Mousemod]      | :heavy_check_mark: |                                                                         |
-| ***TOTAL***    |     ***`???`*** |                      |                      |                    | MSRP Prices.<br>Actual prices will be lower.                            |
+| Part           | Cost<br>(MSRP$) | Manufacturer         | Model                      |     Purchased      | Notes                                                                                 |
+| :------------- | --------------: | -------------------- | -------------------------- | :----------------: | ------------------------------------------------------------------------------------- |
+| **Display**    |           `800` | ???[LG][Displayman]  | ???[27GN950-B][Displaymod] |        :x:         | 27"<br>4K UHD<br>IPS<br>HDR 600<br>144Hz / 1ms<br>G-SYNC<br>AMD FreeSync Pro<br>USB-C |
+| **Headphones** |           `???` | ???[][Headphonesman] | ???[][Headphonesmod]       | :heavy_check_mark: |                                                                                       |
+| **Keyboard 0** |           `???` | ???[][Keyboardman0]  | ???[][Keyboardmod1]        | :heavy_check_mark: |                                                                                       |
+| **Keyboard 1** |           `???` | ???[][Keyboardman1]  | ???[][Keyboardmod0]        | :heavy_check_mark: |                                                                                       |
+| **Mouse**      |           `???` | ???[][Mouseman]      | ???[][Mousemod]            | :heavy_check_mark: |                                                                                       |
+| ***TOTAL***    |     ***`800`*** |                      |                            |                    | MSRP Prices.<br>Actual prices will be lower.                                          |
 
 ## Resources
 
@@ -49,8 +65,8 @@ the desktop game.
 [CASEmod]: https://formdworks.com/products/t1 "T1"
 [CPUman]: https://www.amd.com/ "AMD"
 [CPUmod]: https://www.amd.com/en/products/cpu/amd-ryzen-7-5800x "AMD Ryzen 7 5800X"
-[Displayman]:  ""
-[Displaymod]:  ""
+[Displayman]: https://www.lg.com/ ""
+[Displaymod]: https://www.lg.com/us/monitors/lg-27gn950-b-gaming-monitor "LG 27GN950-B 27 inch UltraGear 4K Nano IPS 1ms G-SYNC Compatible Gaming Monitor"
 [FANman]: https://www.noctua.at/ "Noctua.at"
 [FANmod]: https://noctua.at/en/nf-a12x15-pwm-chromax-black-swap "NF-A12x15 PWM chromax.black.swap"
 [GPUman]: https://www.nvidia.com/ "NVIDIA"
