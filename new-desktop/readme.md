@@ -42,14 +42,14 @@ the desktop game.
 
 ### External Components
 
-| Part           | Cost<br>(MSRP$) | Manufacturer         | Model                      |     Purchased      | Notes                                                                                 |
-| :------------- | --------------: | -------------------- | -------------------------- | :----------------: | ------------------------------------------------------------------------------------- |
-| **Display**    |           `800` | ???[LG][Displayman]  | ???[27GN950-B][Displaymod] |        :x:         | 27"<br>4K UHD<br>IPS<br>HDR 600<br>144Hz / 1ms<br>G-SYNC<br>AMD FreeSync Pro<br>USB-C |
-| **Headphones** |           `???` | ???[][Headphonesman] | ???[][Headphonesmod]       | :heavy_check_mark: |                                                                                       |
-| **Keyboard 0** |           `???` | ???[][Keyboardman0]  | ???[][Keyboardmod1]        | :heavy_check_mark: |                                                                                       |
-| **Keyboard 1** |           `???` | ???[][Keyboardman1]  | ???[][Keyboardmod0]        | :heavy_check_mark: |                                                                                       |
-| **Mouse**      |           `???` | ???[][Mouseman]      | ???[][Mousemod]            | :heavy_check_mark: |                                                                                       |
-| ***TOTAL***    |     ***`800`*** |                      |                            |                    | MSRP Prices.<br>Actual prices will be lower.                                          |
+| Part           | Cost<br>(MSRP$) | Manufacturer         | Model                   |     Purchased      | Notes                                                                                 |
+| :------------- | --------------: | -------------------- | ----------------------- | :----------------: | ------------------------------------------------------------------------------------- |
+| **Display**    |           `800` | [LG][Displayman]     | [27GN950-B][Displaymod] |        :x:         | 27"<br>4K UHD<br>IPS<br>HDR 600<br>144Hz / 1ms<br>G-SYNC<br>AMD FreeSync Pro<br>USB-C |
+| **Headphones** |           `???` | ???[][Headphonesman] | ???[][Headphonesmod]    | :heavy_check_mark: |                                                                                       |
+| **Keyboard 0** |           `???` | ???[][Keyboardman0]  | ???[][Keyboardmod1]     | :heavy_check_mark: |                                                                                       |
+| **Keyboard 1** |           `???` | ???[][Keyboardman1]  | ???[][Keyboardmod0]     | :heavy_check_mark: |                                                                                       |
+| **Mouse**      |           `???` | ???[][Mouseman]      | ???[][Mousemod]         | :heavy_check_mark: |                                                                                       |
+| ***TOTAL***    |     ***`800`*** |                      |                         |                    | MSRP Prices.<br>Actual prices will be lower.                                          |
 
 ## Resources
 
