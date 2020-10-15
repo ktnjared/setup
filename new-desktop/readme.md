@@ -1,25 +1,41 @@
 # New Desktop 2021
 
-In 2020, I gave my Ryzen 1700X desktop to my brother-in-law when the desktop I built him with hand-me-down parts failed.  
+In 2020, I gave my Ryzen 1700X desktop to my brother-in-law when the desktop I built him with hand-me-down parts failed.
 
-I've run with a 2019 MacBook Pro (16-inch) and a 2017 Dell XPS 13 Developer Edition with eGPUs. It's time to get back to 
+I've run with a 2019 MacBook Pro (16-inch) and a 2017 Dell XPS 13 Developer Edition with eGPUs. It's time to get back to
 the desktop game.
 
 ## Purpose
 
-* Daily Driver (Windows; Linux via WSL 2)
+* Daily Driver
+  * [Windows 10](https://www.microsoft.com/en-us/software-download/windows10) Pro
+  * [WSL](https://docs.microsoft.com/en-us/windows/wsl/) 2
+    * [Ubuntu 20.04](https://www.microsoft.com/en-us/p/ubuntu-2004-lts/9n6svws3rx71)
 * Development
-  * Python (Visual Studio Code)
-  * Swift
-    * Swift on Windows (Visual Studio)
-    * Swift on Linux
+  * [Python](https://www.python.org/)
+    * [Visual Studio Code](https://code.visualstudio.com/) + WSL 2
+  * [Swift](https://swift.org/)
+
+    | Platform                                                                                                                                                                                                       | Type    | IDE                                                                                                               |
+    | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------- | ----------------------------------------------------------------------------------------------------------------- |
+    | [Windows](https://swift.org/blog/swift-on-windows/)                                                                                                                                                            | metal   | [Toolchain](https://swift.org/download/) + [Visual Studio 2019](https://visualstudio.microsoft.com/vs/community/) |
+    | WSL 2<br>&nbsp;&nbsp;↳ Ubuntu Linux                                                                                                                                                                            | Hyper-V | [Toolchain](https://swift.org/download/) + [Visual Studio Code](https://code.visualstudio.com/)                   |
+    | WSL 2<br>&nbsp;&nbsp;↳ [Accelerated KVM guests on WSL 2](https://boxofcables.dev/accelerated-kvm-guests-on-wsl-2/)<br>&nbsp;&nbsp;&nbsp;&nbsp;↳ [macOS-Simple-KVM](https://github.com/foxlet/macOS-Simple-KVM) | Hyper-V | Xcode                                                                                                             |
+
 * Gaming (Windows)
-  * Final Fantasy XIV
-  * 
+  * [Final Fantasy XIV](https://www.finalfantasyxiv.com/)
+  * [Minecraft](https://minecraft.net/)
 * Streaming
-  * Twitch
+  * [Twitch](https://twitch.tv/)
 * Virtualization
-  * Hyper-V
+  * [Hyper-V](https://docs.microsoft.com/en-us/virtualization/hyper-v-on-windows/)
+  * KVM via WSL 2
+    * monitor [github/microsoft/WSL/issues/4193/Nested Virtualization for WSL2 VM](https://github.com/microsoft/WSL/issues/4193)
+      * currently works in Insiders Advanced *#2020-10-14; should be functional for 20H2 or 21H1 GA*
+    * see ([Accelerated KVM guests on WSL 2](https://boxofcables.dev/accelerated-kvm-guests-on-wsl-2/) + [macOS-Simple-KVM](https://github.com/foxlet/macOS-Simple-KVM))
+      * Yes, it's real. Video on Reddit:<br>
+        [macOS on QEMU/KVM on WSL2 on Windows - it's virtual machines all the way down!](https://www.reddit.com/r/hackintosh/comments/h98cqx/macos_on_qemukvm_on_wsl2_on_windows_its_virtual/)
+      * [MacOS on WSL2(Win10)](https://sugeul.github.io/2020-06-21-MacOS-on-WSL2/)
 
 ## Parts List
 
@@ -27,29 +43,30 @@ the desktop game.
 
 | Part        | Cost<br>(MSRP$) | Manufacturer            | Model                                              |     Purchased      | Notes                                                                                                         |
 | :---------- | --------------: | ----------------------- | -------------------------------------------------- | :----------------: | ------------------------------------------------------------------------------------------------------------- |
+| **CPU**     |           `449` | [AMD][CPUman]           | [Ryzen 7 5800X][CPUmod]                            |        :x:         | 8 cores<br>16 thread<br>105W TDP                                                                              |
+| **GPU**     |           `700` | [NVIDIA][GPUman]        | [GeForce RTX 3080][GPUmod]                         |        :x:         | Since this is *2021 Build*, am waiting to see Big Navi from AMD as well, but right now this is the selection. |
+| **RAM**     |           `130` | [Corsair][RAMman]       | [CMK32GX4M2B3200C16<br>VENGEANCE LPX 32GB][RAMmod] |        :x:         | 32GB<br>(2x16GB)<br>DDR4<br>3200MHz<br>C16<br>Black                                                           |
+| **SSD 0**   |           `760` | [Sabrent][SSD0man]      | [Rocket Q 4TB][SSD0mod]                            |        :x:         | NVMe<br>M.2 2280<br>PCIe Gen3 x4                                                                              |
+| **SSD 1**   |             `-` | [Samsung][SSD1man]      | [512 GB PM981][SSD1mod]                            | :heavy_check_mark: | NVMe<br>M.2 2280                                                                                              |
+| **MOBO**    |           `???` | [][MOBOman]             | [][MOBOmod]                                        |        :x:         | mITX                                                                                                          |
 | **Case**    |           `210` | [FormD][CASEman]        | [T1 v1.1][CASEmod]                                 |        :x:         | white mITX case<br>9.5 Liters                                                                                 |
 | **PSU**     |           `185` | [Corsair][PSUman]       | [SF750][PSUmod]                                    |        :x:         | SFX<br>750W<br>80+ Plat                                                                                       |
-| **Fan**     |            `20` | [Noctua][FANman]        | [NF-A12x15 Chromax][FANmod]                        |        :x:         | 120x120x15<br>94.2 m³/h<br>1850 RPM<br>23.9 dB                                                                |
-| **Fan**     |            `20` | [Noctua][FANman]        | [NF-A12x15 Chromax][FANmod]                        |        :x:         | 120x120x15<br>94.2 m³/h<br>1850 RPM<br>23.9 dB                                                                |
-| **CPU**     |           `449` | [AMD][CPUman]           | [Ryzen 7 5800X][CPUmod]                            |        :x:         | 8 cores<br>16 thread<br>105W TDP                                                                              |
 | **HSF**     |            `80` | [Cooler Master][HSFman] | [MasterLiquid ML240L V2][HSFmod]                   |        :x:         |                                                                                                               |
-| **MOBO**    |           `???` | [][MOBOman]             | [][MOBOmod]                                        |        :x:         | mITX                                                                                                          |
-| **RAM**     |           `130` | [Corsair][RAMman]       | [CMK32GX4M2B3200C16<br>VENGEANCE LPX 32GB][RAMmod] |        :x:         | 32GB<br>(2x16GB)<br>DDR4<br>3200MHz<br>C16<br>Black                                                           |
-| **GPU**     |           `700` | [NVIDIA][GPUman]        | [GeForce RTX 3080][GPUmod]                         |        :x:         | Since this is *2021 Build*, am waiting to see Big Navi from AMD as well, but right now this is the selection. |
-| **SSD 0**   |           `760` | [Sabrent][SSD0man]      | [Rocket Q 4TB][SSD0mod]                            |        :x:         | NVMe<br>M.2 2280<br>PCIe Gen3 x4                                                                              |
-| **SSD 1**   |             `0` | [Samsung][SSD1man]      | [512 GB PM981][SSD1mod]                            | :heavy_check_mark: | NVMe<br>M.2 2280                                                                                              |
+| **Fan**     |            `20` | [Noctua][FANman]        | [NF-A12x15 Chromax][FANmod]                        |        :x:         | 120x120x15<br>94.2 m³/h<br>1850 RPM<br>23.9 dB                                                                |
+| **Fan**     |            `20` | [Noctua][FANman]        | [NF-A12x15 Chromax][FANmod]                        |        :x:         | 120x120x15<br>94.2 m³/h<br>1850 RPM<br>23.9 dB                                                                |
 | ***TOTAL*** |    ***`2554`*** |                         |                                                    |                    | MSRP Prices.<br>Actual prices will be lower.                                                                  |
 
 ### External Components
 
-| Part           | Cost<br>(MSRP$) | Manufacturer         | Model                   |     Purchased      | Notes                                                                                 |
-| :------------- | --------------: | -------------------- | ----------------------- | :----------------: | ------------------------------------------------------------------------------------- |
-| **Display**    |           `800` | [LG][Displayman]     | [27GN950-B][Displaymod] |        :x:         | 27"<br>4K UHD<br>IPS<br>HDR 600<br>144Hz / 1ms<br>G-SYNC<br>AMD FreeSync Pro<br>USB-C |
-| **Headphones** |           `???` | ???[][Headphonesman] | ???[][Headphonesmod]    | :heavy_check_mark: |                                                                                       |
-| **Keyboard 0** |           `???` | ???[][Keyboardman0]  | ???[][Keyboardmod1]     | :heavy_check_mark: |                                                                                       |
-| **Keyboard 1** |           `???` | ???[][Keyboardman1]  | ???[][Keyboardmod0]     | :heavy_check_mark: |                                                                                       |
-| **Mouse**      |           `???` | ???[][Mouseman]      | ???[][Mousemod]         | :heavy_check_mark: |                                                                                       |
-| ***TOTAL***    |     ***`800`*** |                      |                         |                    | MSRP Prices.<br>Actual prices will be lower.                                          |
+| Part           | Cost<br>(MSRP$) | Manufacturer                        | Model                      |     Purchased      | Notes                                                                                 |
+| :------------- | --------------: | ----------------------------------- | -------------------------- | :----------------: | ------------------------------------------------------------------------------------- |
+| **Display**    |           `800` | [LG][Displayman]                    | [27GN950-B][Displaymod]    |        :x:         | 27"<br>4K UHD<br>IPS<br>HDR 600<br>144Hz / 1ms<br>G-SYNC<br>AMD FreeSync Pro<br>USB-C |
+| **Headphones** |           `???` | ???[][Headphonesman]                | ???[][Headphonesmod]       | :heavy_check_mark: |                                                                                       |
+| **Keyboard 1** |           `???` | [ZSA Technology Labs][ergodoxman] | [ErgoDox EZ][ergodoxmod] | :heavy_check_mark: |                                                                                       |
+| **Keyboard 0** |           `???` | [Logitch][Keyboard1man]             | [ERGO K860][Keyboard1mod]  | :heavy_check_mark: | For when I need ergonomics, but QWERTY layout with short-throw switches.              |
+| **Keyboard 2** |           `???` | ???[][Keyboard2man]                 | ???[][Keyboard2mod]        | :heavy_check_mark: |                                                                                       |
+| **Mouse**      |           `???` | ???[][Mouseman]                     | ???[][Mousemod]            | :heavy_check_mark: |                                                                                       |
+| ***TOTAL***    |     ***`800`*** |                                     |                            |                    | MSRP Prices.<br>Actual prices will be lower.                                          |
 
 ## Resources
 
@@ -75,10 +92,12 @@ the desktop game.
 [Headphonesmod]:  ""
 [HSFman]: https://www.coolermaster.com/ "Cooler Master"
 [HSFmod]: https://www.coolermaster.com/catalog/coolers/cpu-liquid-coolers/masterliquid-ml240l-v2-rgb/ "MASTERLIQUID ML240L V2 RGB"
-[Keyboardman0]:  ""
-[Keyboardmod0]:  ""
-[Keyboardman1]:  ""
-[Keyboardmod1]:  ""
+[ergodoxman]: https://blog.zsa.io/ "The Ergo"
+[ergodoxmod]: https://ergodox-ez.com/ "ErgoDox EZ: An Incredible Mechanical Ergonomic Keyboard"
+[Keyboard1man]: https://www.logitech.com/ "Logitech"
+[Keyboard1mod]: https://www.logitech.com/en-us/products/keyboards/k860-split-ergonomic.920-009166.html "ERGO K860"
+[Keyboard2man]:  ""
+[Keyboard3mod]:  ""
 [MOBOman]:  ""
 [MOBOmod]:  ""
 [Mouseman]:  ""
