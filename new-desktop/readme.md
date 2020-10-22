@@ -35,25 +35,25 @@ It's time to get back to the desktop game.
 ## Purpose
 
 * Daily Driver
-  * [Windows 10](https://www.microsoft.com/en-us/software-download/windows10) Pro
-  * [WSL](https://docs.microsoft.com/en-us/windows/wsl/) 2
-    * [Ubuntu 20.04](https://www.microsoft.com/en-us/p/ubuntu-2004-lts/9n6svws3rx71)
-    * [macOS](https://apple.com/macos/)
+  * [Windows 10][os_win10] Pro
+  * [WSL][wsl] 2
+    * [Ubuntu 20.04][os_ubuntu_wsl]
+    * [macOS][macos]
       * [Hayden Barnes][hayden]: [Accelerated KVM guests on WSL 2](https://boxofcables.dev/accelerated-kvm-guests-on-wsl-2/)
       * [Foxlet][foxlet]: [macOS-Simple-KVM](https://github.com/foxlet/macOS-Simple-KVM)
       * [u/my_spaghetti][u_my_spaghetti] on [r/hackintosh][r_hackintosh]: [macOS on QEMU/KVM on WSL2 on Windows - it's virtual machines all the way down!][vm_all_the_way_down]
       * [Sugeul Jin][segeul]: [MacOS on WSL2(Win10)](https://sugeul.github.io/2020-06-21-MacOS-on-WSL2/)
 * Development
   * [Python](https://www.python.org/)
-    * [Visual Studio Code](https://code.visualstudio.com/)
+    * [Visual Studio Code][vscode]
     * WSL 2
   * [Swift](https://swift.org/)
 
-    | Platform                                            | IDE                                                                                                         |
-    | --------------------------------------------------- | ----------------------------------------------------------------------------------------------------------- |
-    | [Windows](https://swift.org/blog/swift-on-windows/) | [Swift Toolchain][swift_toolchain] + [Visual Studio 2019](https://visualstudio.microsoft.com/vs/community/) |
-    | WSL 2: macOS                                        | [Xcode][xcode] + [Swift Playgrounds][swift_playgrounds]                                                     |
-    | WSL 2: Ubuntu Linux                                 | [Swift Toolchain][swift_toolchain] + [Visual Studio Code](https://code.visualstudio.com/)                   |
+    | Platform             | IDE                                                                                                         |
+    | -------------------- | ----------------------------------------------------------------------------------------------------------- |
+    | [Windows][swift_win] | [Swift Toolchain][swift_toolchain] + [Visual Studio 2019](https://visualstudio.microsoft.com/vs/community/) |
+    | WSL 2: macOS         | [Xcode][xcode] + [Swift Playgrounds][swift_playgrounds]                                                     |
+    | WSL 2: Ubuntu Linux  | [Swift Toolchain][swift_toolchain] + [Visual Studio Code][vscode]                                           |
 
 * Gaming (Windows)
   * [Battle.net](https://www.blizzard.com/en-us/apps/battle.net/desktop)
@@ -75,21 +75,31 @@ It's time to get back to the desktop game.
       * As of 2020-10-14, works in Insiders Advanced
       * should be functional for 20H2 or 21H1 GA 🤞🏻
 
-## Parts List
+## Thoughts
 
-* Since this is *"2021 Build"*, am waiting to see Big Navi from AMD as well, but right now the RTX is the selection.
+* GPU
+  * Since this is *"2021 Build"*, am waiting to see Big Navi from AMD as well, but right now the RTX is the selection.
   * Requirement: Full-size DisplayPort output for VGA output device to CRT displays when feeling cheeky
 * Monitor Discussion
-  * There does not seem to be a monitor in existence yet that meets the wants that I have. The 27GN950-B seems to be the closest for a non-curved display that would provide work + games. Re-evaluate closer to time of purchase.
-    1. ~~32"~~ *27" only*
-    2. 4K UHD ~~***or*** 3:2 aspect ratio, 4500x3000 or higher~~
-    3. IPS
-    4. ~~HDR10~~ *HDR 600 only*
-    5. 144Hz / 1ms
-    6. G-SYNC
-    7. AMD FreeSync Pro
-    8. USB-C ~~***or*** Thunderbolt 3~~ connectivity
+  * There does not seem to be a monitor in existence yet that meets the wants that I have.
+  * The [LG 27GN950-B][monitor] seems to be the closest for a non-curved display that would provide work + games. Re-evaluate closer to time of purchase.
+
+      | Spec                          | Desired                                              | [LG 27GN950-B][monitor] | Meets   |
+      | ----------------------------- | ---------------------------------------------------- | ----------------------- | ------- |
+      | Display Size                  | 32"                                                  | 27"                     | :x:     |
+      | Aspect Ratio                  | 3:2<br>16:10                                         | 16:9                    | :x:     |
+      | Resolution                    | 4500x3000 [if 3:2]<br>3840x2400 (4K UHD+) [if 16:10] | 4K UHD (3840x2160)      | :x:     |
+      | Panel Type                    | IPS                                                  | IPS                     | :smile: |
+      | HDR                           | HDR10                                                | HDR 600                 | :x:     |
+      | Refresh                       | 120 Hz or greater                                    | 144 Hz                  | :smile: |
+      | Response                      | Under 5 ms                                           | 1 ms                    | :smile: |
+      | Variable Refresh              | G-SYNC + FreeSync                                    | G-SYNC + FreeSync       | :smile: |
+      | USB-C 3.1+ / USB 4            | Yes / Yes                                            | Yes / No                | :smile: |
+      | Thunderbolt 3 / Thunderbolt 4 | Yes                                                  | No                      | :x:     |
+
   * My current [Samsung C27HG7x][monitor_current] will serve as a secondary display when necessary.
+
+## Parts List
 
 ### Computer
 
@@ -152,24 +162,6 @@ It's time to get back to the desktop game.
 * [Optimum Tech — 3 — Fixing fittings + thermal testing][youtube3]
 * [Optimum Tech — 4 — FormD T1 RTX 3090/3080][youtube4]
 
-<!-- URLs OTHER -->
-[foxlet]: https://foxlet.furcode.co/
-[gdocs1]: https://docs.google.com/spreadsheets/d/12fTWe4Y4prgAHPhsk4HA2-wK8PRnPyy2ZxIzcbNapNE/edit?usp=sharing "Google Sheets — FormD T1 AIO Compatibility List"
-[hayden]: https://twitter.com/unixterminal
-[jisjim]: https://en.wikipedia.org/wiki/Japanese_input_method
-[r_hackintosh]: https://www.reddit.com/r/hackintosh/
-[reddit1]: https://www.reddit.com/r/FormD/ "/r/FormD"
-[segeul]: https://sugeul.github.io/
-[swift_playgrounds]: https://www.apple.com/swift/playgrounds/
-[swift_toolchain]: https://swift.org/download/
-[u_my_spaghetti]: https://www.reddit.com/user/my_spaghetti/
-[vm_all_the_way_down]: https://www.reddit.com/r/hackintosh/comments/h98cqx/macos_on_qemukvm_on_wsl2_on_windows_its_virtual/
-[xcode]: https://developer.apple.com/xcode/
-[youtube1]: https://youtu.be/Ou4iWsBNSmY "YouTube — Optimum Tech — FormD T1 - The Ultimate Sub-10L Case!"
-[youtube2]: https://youtu.be/W1mO5dNJIgo "YouTube — Optimum Tech — SFF Endgame - Mini Liquid Cooled i9 / 2080 Ti Build"
-[youtube3]: https://youtu.be/dbLugatTfTc "YouTube — Optimum Tech — The Liquid Cooled T1 Build is Complete!"
-[youtube4]: https://youtu.be/_GhFSSLp-mE "YouTube — Optimum Tech — This Wasn’t Supposed to Work – RTX 3090 / 3080 in Sub-10L."
-
 <!-- URLS - PARTS -->
 [case]: https://formdworks.com/products/t1 "T1"
 [cpu]: https://www.amd.com/en/products/cpu/amd-ryzen-7-5800x "AMD Ryzen 7 5800X"
@@ -195,3 +187,27 @@ It's time to get back to the desktop game.
 [speakers]: https://www.bose.com/en_us/products/speakers/stereo_speakers/companion-2-series-iii-multimedia-speaker-system.html
 [storage0]: https://www.sabrent.com/product/SB-RKTQ-4TB/rocket-q-4tb-nvme-pcie-m-2-2280-internal-ssd-high-performance-solid-state-drive/ "Rocket Q 4TB NVMe PCIe M.2 2280 Internal SSD Solid State Drive (SB-RKTQ-4TB)"
 [storage1]: https://www.samsung.com/semiconductor/ssd/client-ssd/MZVLB512HAJQ/ "PM981 MZVLB512HAJQ | Samsung Semiconductor Global Website"
+
+<!-- URLs OTHER -->
+[foxlet]: https://foxlet.furcode.co/
+[gdocs1]: https://docs.google.com/spreadsheets/d/12fTWe4Y4prgAHPhsk4HA2-wK8PRnPyy2ZxIzcbNapNE/edit?usp=sharing "Google Sheets — FormD T1 AIO Compatibility List"
+[hayden]: https://twitter.com/unixterminal
+[jisjim]: https://en.wikipedia.org/wiki/Japanese_input_method
+[r_hackintosh]: https://www.reddit.com/r/hackintosh/
+[reddit1]: https://www.reddit.com/r/FormD/ "/r/FormD"
+[segeul]: https://sugeul.github.io/
+[swift_playgrounds]: https://www.apple.com/swift/playgrounds/
+[swift_toolchain]: https://swift.org/download/
+[u_my_spaghetti]: https://www.reddit.com/user/my_spaghetti/
+[vm_all_the_way_down]: https://www.reddit.com/r/hackintosh/comments/h98cqx/macos_on_qemukvm_on_wsl2_on_windows_its_virtual/
+[xcode]: https://developer.apple.com/xcode/
+[youtube1]: https://youtu.be/Ou4iWsBNSmY "YouTube — Optimum Tech — FormD T1 - The Ultimate Sub-10L Case!"
+[youtube2]: https://youtu.be/W1mO5dNJIgo "YouTube — Optimum Tech — SFF Endgame - Mini Liquid Cooled i9 / 2080 Ti Build"
+[youtube3]: https://youtu.be/dbLugatTfTc "YouTube — Optimum Tech — The Liquid Cooled T1 Build is Complete!"
+[youtube4]: https://youtu.be/_GhFSSLp-mE "YouTube — Optimum Tech — This Wasn’t Supposed to Work – RTX 3090 / 3080 in Sub-10L."
+[os_win10]: https://www.microsoft.com/en-us/software-download/windows10
+[wsl]: https://docs.microsoft.com/en-us/windows/wsl/
+[os_macos]: https://apple.com/macos/
+[swift_win]: https://swift.org/blog/swift-on-windows/
+[os_ubuntu_wsl]: https://ubuntu.com/wsl
+[vscode]: (https://code.visualstudio.com/
