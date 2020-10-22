@@ -118,12 +118,12 @@ It's time to get back to the desktop game.
 
 ##### Audio/Visual
 
-| Type           | Cost<br>(MSRP$) |     Purchased      | Part                                     | Details |
-| :------------- | --------------: | :----------------: | ---------------------------------------- | ------- |
-| **Monitor**    |           `800` |        :x:         | [LG 27GN950-B][monitor]                  |         |
-| **Headphones** |             `-` | :heavy_check_mark: | [see headphones.md][gist_headphones]     |         |
-| **Headset**    |             `-` | :heavy_check_mark: | [see headphones.md][gist_headphones]     |         |
-| **Speakers**   |             `-` | :heavy_check_mark: | [Bose Companion® 2 Series III][speakers] |         |
+| Type           | Cost<br>(MSRP$) |     Purchased      | Part                                    | Details |
+| :------------- | --------------: | :----------------: | --------------------------------------- | ------- |
+| **Monitor**    |           `800` |        :x:         | [LG 27GN950-B][monitor]                 |         |
+| **Headphones** |             `-` | :heavy_check_mark: | [see headphones.md][gist_headphones]    |         |
+| **Headset**    |             `-` | :heavy_check_mark: | [see headphones.md][gist_headphones]    |         |
+| **Speakers**   |             `-` | :heavy_check_mark: | [Bose Companion 2 Series III][speakers] |         |
 
 
 ##### Input/Output
