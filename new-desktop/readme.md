@@ -4,21 +4,21 @@ In 2020, I gave my Ryzen 1700X desktop to my brother-in-law when the desktop I b
 
 ## Current Setup
 
-* 2017 Dell XPS 13 Developer Edition
-  * Dual Boot
-    * Ubuntu Linux 20.04
-    * Windows 10 Pro
-  * 1 TB NVMe
-  * 16 GB RAM
-  * Intel UHD 630 iGPU
-* 2018 Mac mini
+1. 2017 Dell XPS 13 Developer Edition
+    - Dual Boot
+        - Ubuntu Linux 20.04
+        - Windows 10 Pro
+    - 1 TB NVMe
+    - 16 GB RAM
+    - Intel UHD 630 iGPU
+2. 2018 Mac mini
   * Dual Boot
     * macOS 11.0 Big Sur developer beta 10
     * Windows 10 Pro (Boot Camp)
   * 512 GB NVMe
   * 8 GB RAM
   * Intel UHD 630 iGPU
-* 2019 MacBook Pro (16-inch)
+3. 2019 MacBook Pro (16-inch)
   * Dual Boot
     * macOS 11.0 Big Sur developer beta 10
     * macOS 10.15.7 Catalina
@@ -41,10 +41,10 @@ It's time to get back to the desktop game.
   * [Windows 10][os_win10] Pro
   * [WSL][wsl] 2
     * [Ubuntu 20.04][os_ubuntu_wsl]
-    * [macOS][macos]
+    * [macOS][os_macos]
       * [Hayden Barnes][hayden]: [Accelerated KVM guests on WSL 2](https://boxofcables.dev/accelerated-kvm-guests-on-wsl-2/)
       * [Foxlet][foxlet]: [macOS-Simple-KVM](https://github.com/foxlet/macOS-Simple-KVM)
-      * [u/my_spaghetti][u_my_spaghetti] on [r/hackintosh][r_hackintosh]: [macOS on QEMU/KVM on WSL2 on Windows - it's virtual machines all the way down!][vm_all_the_way_down]
+      * [u/my_spaghetti][u_my_spaghetti] on [r/hackintosh][r_hackintosh]: [macOS on QEMU/KVM on WSL2 on Windows - it's virtual machines all the way down!][reddit1]
       * [Sugeul Jin][segeul]: [MacOS on WSL2(Win10)](https://sugeul.github.io/2020-06-21-MacOS-on-WSL2/)
 * Development
   * [Python](https://www.python.org/)
@@ -202,7 +202,7 @@ It's time to get back to the desktop game.
 [swift_playgrounds]: https://www.apple.com/swift/playgrounds/
 [swift_toolchain]: https://swift.org/download/
 [u_my_spaghetti]: https://www.reddit.com/user/my_spaghetti/
-[vm_all_the_way_down]: https://www.reddit.com/r/hackintosh/comments/h98cqx/macos_on_qemukvm_on_wsl2_on_windows_its_virtual/
+[reddit1]: https://www.reddit.com/r/hackintosh/comments/h98cqx/macos_on_qemukvm_on_wsl2_on_windows_its_virtual/
 [xcode]: https://developer.apple.com/xcode/
 [youtube1]: https://youtu.be/Ou4iWsBNSmY "YouTube — Optimum Tech — FormD T1 - The Ultimate Sub-10L Case!"
 [youtube2]: https://youtu.be/W1mO5dNJIgo "YouTube — Optimum Tech — SFF Endgame - Mini Liquid Cooled i9 / 2080 Ti Build"
