@@ -7,12 +7,14 @@ In 2020, I gave my Ryzen 1700X desktop to my brother-in-law when the desktop I b
 * 2017 Dell XPS 13 Developer Edition
   * Dual Boot
     * Ubuntu Linux 20.04
-    * Windows 10
+    * Windows 10 Pro
   * 1 TB NVMe
   * 16 GB RAM
   * Intel UHD 630 iGPU
 * 2018 Mac mini
-  * macOS 11.0 Big Sur developer beta 10
+  * Dual Boot
+    * macOS 11.0 Big Sur developer beta 10
+    * Windows 10 Pro (Boot Camp)
   * 512 GB NVMe
   * 8 GB RAM
   * Intel UHD 630 iGPU
@@ -20,6 +22,7 @@ In 2020, I gave my Ryzen 1700X desktop to my brother-in-law when the desktop I b
   * Dual Boot
     * macOS 11.0 Big Sur developer beta 10
     * macOS 10.15.7 Catalina
+    * Windows 10 Pro (Boot Camp)
   * 512 GB NVMe
   * 16 GB RAM
   * Intel UHD 630 iGPU
