@@ -1,8 +1,8 @@
-#
+# Myyah 20H2
 
 ## Windows 10
 
-1. Install the latest version of [Windows 10](https://www.microsoft.com/en-us/software-download/windows10).
+1. Install the latest version of [Windows 10][win10_download].
     - Local user
     - Privacy Settings page
 
@@ -12,40 +12,56 @@
         | Diagnostics        | on     | Tailored experiences | off    |
         | Relevant Ads       | off    |                      |        |
     - Cortana off
-    - Task Sharing off
 
 2. Install all updates from Software Update.
-    - Continue to Check for Updates, reboot, and rerun until there are none left
-3. Install [Dell SupportAssist](https://downloads.dell.com/serviceability/catalog/SupportAssistInstaller.exe).
-4. Run all steps.
+    - Continue to Check for Updates, install, reboot, and rerun until there are none left.
+    - Install any optional updates, including drivers and firmware.
 
-## [Windows Subsystem for Linux](https://docs.microsoft.com/en-us/windows/wsl/) (WSL)
+## Drivers & Dell SupportAssist
 
-Installation documentation is [available in Microsoft Docs](https://docs.microsoft.com/en-us/windows/wsl/install-win10).
+1. Install [Dell SupportAssistant][app_supportassitant].
+
+    ```powershell
+    $download_url = "https://downloads.dell.com/serviceability/catalog/SupportAssistInstaller.exe"
+    $download_dir = $env:userprofile + '\Downloads'
+    $download_file = "SupportAssistInstaller.exe"
+
+    Invoke-WebRequest -Uri $download_url -OutFile $download_dir\$download_file
+    Invoke-Expression $download_dir\$download_file
+    Remove-Variable download_dir
+    Remove-Variable download_file
+    Remove-Variable download_url
+    ```
+
+2. Run all steps.
+
+## [Windows Subsystem for Linux][wsl] aka WSL
+
+Installation documentation is [available in Microsoft Docs][wsl_install].
 
 1. Enable WSL
 
-    Open PowerShell as Administrator and run
+    In PowerShell as Administrator, run
 
-    ```shell
+    ```powershell
     dism.exe /online /enable-feature /featurename:Microsoft-Windows-Subsystem-Linux /all /norestart
     ```
 
 2. Enable Virtual Machine Platform
 
-    ```shell
+    ```powershell
     dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /norestart
     ```
 
 3. Reboot.
-4. Install the [WSL2 Linux Kernel update package for x64 machines](https://wslstorestorage.blob.core.windows.net/wslblob/wsl_update_x64.msi).
+4. Install the [WSL2 Linux Kernel update package for x64 machines][wsl_kernel_update].
 5. Set WSL 2 a the default version
 
-    ```shell
+    ```powershell
     wsl --set-default-version 2
     ```
 
-6. Install a Linux distribution via the [Microsoft Store](https://aka.ms/wslstore).
+6. Install a Linux distribution via the [Microsoft Store][microsoft_store].
     - [Kali Linux](https://www.microsoft.com/store/apps/9PKR34TNCV07)
     - [Pengwin](https://www.microsoft.com/store/apps/9NV1GV1PXZ6P)
     - [Ubuntu 20.04 LTS](https://www.microsoft.com/store/apps/9n6svws3rx71)
@@ -59,14 +75,14 @@ Installation documentation is [available in Microsoft Docs](https://docs.microso
 - [Visual Studio](https://visualstudio.microsoft.com/) [Community Edition](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=Community)
     - Individual Components
 
-        | Component                                          | Visual Studio ID                                    | Type        |
-        | -------------------------------------------------- | --------------------------------------------------- | ----------- |
-        | C++ CMake tools for Windows                        | Microsoft.VisualStudio.Component.VC.CMake.Project   | recommended |
-        | Git for Windows                                    | Microsoft.VisualStudio.Component.Git                | recommended |
-        | MSVC v142 - VS 2019 C++ x64/x86 build tools 14.25+ | Microsoft.VisualStudio.Component.VC.Tools.x86.x64   | <span style="font-color: #9F0000;">required</span>    |
-        | Python 3 64-bit 3.7.8+                             | Component.CPython.x64                               | recommended |
-        | Windows 10 SDK 10.0.17763.0+                       | Microsoft.VisualStudio.Component.Windows10SDK.17763 | required    |
-        | Windows Universal C Runtime                        | Microsoft.VisualStudio.Component.Windows10SDK       | required    |
+        | Component                                          | Visual Studio ID                                    | Type                                               |
+        | -------------------------------------------------- | --------------------------------------------------- | -------------------------------------------------- |
+        | C++ CMake tools for Windows                        | Microsoft.VisualStudio.Component.VC.CMake.Project   | recommended                                        |
+        | Git for Windows                                    | Microsoft.VisualStudio.Component.Git                | recommended                                        |
+        | MSVC v142 - VS 2019 C++ x64/x86 build tools 14.25+ | Microsoft.VisualStudio.Component.VC.Tools.x86.x64   | <span style="font-color: #9F0000;">required</span> |
+        | Python 3 64-bit 3.7.8+                             | Component.CPython.x64                               | recommended                                        |
+        | Windows 10 SDK 10.0.17763.0+                       | Microsoft.VisualStudio.Component.Windows10SDK.17763 | required                                           |
+        | Windows Universal C Runtime                        | Microsoft.VisualStudio.Component.Windows10SDK       | required                                           |
 
 ## Microsoft Store
 
@@ -196,3 +212,19 @@ git
 git config --global user.email "email@jaredschmidt.net"
 git config --global user.name "Jared Schmidt"
 ```
+
+## Settings
+
+### Disable Alt + Tab experience for Microsoft Edge
+
+1. Windows 10 Settings
+2. System
+3. Multitasking
+4. Under "Alt + Tab", change the drop-down menu to **Open windows only** option.
+
+<!-- URLs -->
+[app_supportassistant]: https://www.dell.com/support/contents/en-us/article/product-support/self-support-knowledgebase/software-and-downloads/supportassist
+[win10_download]: https://www.microsoft.com/software-download/windows10
+[wsl_install]: https://docs.microsoft.com/en-us/windows/wsl/install-win10
+[wsl_kernel_update]: https://wslstorestorage.blob.core.windows.net/wslblob/wsl_update_x64.msi
+[wsl]: https://docs.microsoft.com/windows/wsl/
