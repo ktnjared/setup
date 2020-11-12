@@ -31,15 +31,15 @@ Start-Process -Verb RunAs powershell.exe -Args "Rename-Computer myyah"
 4. Install All
 5. Reboot
 6. Continue to loop until no updates remain
-   - Install any optional updates, drivers and firmware.
+    - Install any optional updates, drivers and firmware.
 
 #### 4. Sign in to OneDrive
 
-Sign in to OneDrive and begin sync. We will need the `.ps1` files in 
+Sign in to OneDrive and begin sync. We will need the `.ps1` files in
 
 ### Drivers & Dell SupportAssist
 
-#### 1. Install [Dell SupportAssistant][app_supportassitant].
+#### 1. Install [Dell SupportAssistant][app_supportassitant]
 
 ```powershell
 $download_dir = $env:userprofile + '\Downloads'
@@ -120,12 +120,12 @@ wsl --set-default-version 2
 
 1. Add Recycle Bin to Quick Access in File Explorer
 2. Remove Recycle Bin from Desktop
-   1. Settings
-   2. Personalization
-   3. Themes
-   4. Desktop icon settings
-   5. Uncheck *Recycle Bin*
-   6. Click *OK*
+    1. Settings
+    2. Personalization
+    3. Themes
+    4. Desktop icon settings
+    5. Uncheck *Recycle Bin*
+    6. Click *OK*
 
 ### Preferences
 
@@ -174,8 +174,8 @@ _Note: This process will not be required after `winget` is out of Preview Releas
 ## Windows Terminal
 
 ### HOWTO Updating Terminal Settings
-1
-Windows Terminal settings are stored in a settings.json file. To edit it, press `CTRL + ,` in Windows Terminal. The file itself is located at `$env:localappdata\Local\Packages\Microsoft.WindowsTerminal_8wekyb3d8bbwe\LocalState\settings.json`
+
+Windows Terminal settings are stored in a settings.json file. To edit it, press `CTRL + ,` in Windows Terminal. The file itself is located at `$env:localappdata\Local\Packages\Microsoft.WindowsTerminal_8wekyb3d8bbwe\LocalState\settings.json`.
 
 ### Change Default Shell
 
@@ -193,49 +193,34 @@ Change `defaultprofile` to PowerShell 7
 
 ## Final Fantasy XIV
 
-1. Download client from [https://sqex.to/ffxiv_client_en][game_ffxiv_client]
+Download client from [https://sqex.to/ffxiv_client_en][game_ffxiv_client] & install.
 
-    - Use a browser and navigate to the URL
+```powershell
+$download_dir = $env:userprofile + '\Downloads'
+$download_file = "ffxivsetup.exe"
+$download_url = "https://gdl.square-enix.com/ffxiv/inst/ffxivsetup.exe"
 
-     OR
+Invoke-WebRequest -Uri $download_url -OutFile $download_dir\$download_file
+Invoke-Expression $download_dir\$download_file
 
-    - Use PowerShell
-
-        ```powershell
-        $download_dir = $env:userprofile + '\Downloads'
-        $download_file = "ffxivsetup.exe"
-        $download_url = "https://gdl.square-enix.com/ffxiv/inst/ffxivsetup.exe"
-
-        Invoke-WebRequest -Uri $download_url -OutFile $download_dir\$download_file
-        Invoke-Expression $download_dir\$download_file
-
-        Remove-Variable download_dir
-        Remove-Variable download_file
-        Remove-Variable download_url
-        ```
-
-1. Install
-
-## Microsoft Edge
-
-### Bitwarden Extension
-
-1. Open [edge://extensions/shortcuts][edge_extensions]
-2. Set *Auto-fill the last used login for the current website* to **Ctrl + Shift + L**
+Remove-Variable download_dir
+Remove-Variable download_file
+Remove-Variable download_url
+```
 
 ## EarTrumpet
 
 1. Launch EarTrumpet
 2. Remove System Volume from System Tray
-   1. Settings
-   2. Personalization
-   3. Taskbar
-   4. Turn system icons on or off
-   5. Set *Volume* to **Off**
+    1. Settings
+    2. Personalization
+    3. Taskbar
+    4. Turn system icons on or off
+    5. Set *Volume* to **Off**
 3. Set *System Sounds* to **20%**
 
 <!-- URLS -->
-
+[1password]: https://1password.com/
 [app_auto_dark_mode]: https://github.com/Armin2208/Windows-Auto-Night-Mode
 [app_eartrumpet]: https://eartrumpet.app/
 [app_geforce_exp]: https://www.nvidia.com/en-us/geforce/geforce-experience/
