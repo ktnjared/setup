@@ -1,0 +1,47 @@
+{
+    "[markdown]": {
+        "editor.defaultFormatter": "yzhang.markdown-all-in-one"
+    },
+    "[sql]": {
+        "editor.defaultFormatter": "mtxr.sqltools"
+    },
+    "editor.fontFamily": "'Cascadia Code', monospace",
+    "editor.fontLigatures": true,
+    "editor.mouseWheelZoom": true,
+    "editor.rulers": [
+        80,
+        100,
+        120
+    ],
+    "editor.suggestSelection": "first",
+    "extensions.ignoreRecommendations": false,
+    "git.autofetch": true,
+    "git.confirmSync": false,
+    "git.enableSmartCommit": true,
+    "markdown-preview-enhanced.codeBlockTheme": "darcula.css",
+    "markdown.preview.lineHeight": 1.7,
+    "markdownlint.config": {
+        "code-block-style": false,
+        "no-inline-html": false
+    },
+    "markdownlint.ignore": [
+        "MD001",
+        "MD007",
+        "MD033",
+        "MD024",
+        "MD046"
+    ],
+    "powershell.integratedConsole.showOnStartup": false,
+    "powershell.promptToUpdatePowerShell": false,
+    "powershell.startAsLoginShell.linux": true,
+    "python.languageServer": "Pylance",
+    "remote.SSH.remotePlatform": {
+        "mini": "macOS",
+        "nazara": "linux",
+        "proxy": "linux"
+    },
+    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+    "workbench.colorTheme": "Dracula",
+    "workbench.iconTheme": "vscode-icons",
+    "workbench.startupEditor": "newUntitledFile"
+}
