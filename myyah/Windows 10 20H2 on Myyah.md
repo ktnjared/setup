@@ -154,7 +154,6 @@ _Note: This process will not be required after `winget` is out of Preview Releas
 | [Battle. Net][game_bnet]                     | Blizzard.BattleNet                          | `winget install battlenet`                        |
 | [Discord][discord]                           | Discord.Discord                             | `winget install discord`                          |
 | [EarTrumpet][app_eartrumpet]                 | File-New-Project.EarTrumpet                 | `winget install eartrumpet`                       |
-| [f.lux][flux]                                | flux.flux                                   | `winget install flux`                             |
 | [Git][git]                                   | Git.Git                                     | `winget install git`                              |
 | [Minecraft Launcher][minecraft]              | Mojang.MinecraftLauncher                    | `winget install minecraft`                        |
 | [Nvidia GeForce Experience][app_geforce_exp] | Nvidia.GeForceExperience                    | `winget install Nvidia.GeForceExperience`         |
@@ -228,7 +227,6 @@ Remove-Variable download_url
 [app_quicklook]: https://pooi.moe/QuickLook/
 [app_supportassistant]: https://www.dell.com/support/contents/en-us/article/product-support/self-support-knowledgebase/software-and-downloads/supportassist
 [app_twitch]: https://www.twitch.tv/downloads
-[bitwarden]: https://bitwarden.com/
 [discord]: https://discord.com/
 [edge_extensions]: edge://extensions/shortcuts
 [flux]: https://justgetflux.com/
